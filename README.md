@@ -1,5 +1,5 @@
-mqtt
-====
+1. Run mqtt broker - Apache Apollo
+===========================
 ```
 $ curl -L -O http://ftp.yz.yamagata-u.ac.jp/pub/network/apache/activemq/activemq-apollo/1.7/apache-apollo-1.7-unix-distro.tar.gz
 $ tar zxvf apache-apollo-1.7-unix-distro.tar.gz
@@ -34,4 +34,12 @@ INFO  | Accepting connections at: wss://0.0.0.0:61624/
 INFO  | Administration interface available at: https://127.0.0.1:61681/
 INFO  | Administration interface available at: http://127.0.0.1:61680/
 ```
+Open https://127.0.0.1:61681/. Default credentials are admin/password.
 
+2. Run Publisher
+================
+Execute com.jdreamer.iot.Publish
+
+3. Run Subscriber
+================
+Execute com.jdreamer.iot.Subsrcibe
