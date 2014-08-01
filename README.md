@@ -6,6 +6,10 @@ $ tar zxvf apache-apollo-1.7-unix-distro.tar.gz
 $ ln -s apache-apollo-1.7 apache-apollo
 $ cd apache-apollo
 $ bin/apollo create kii-iot
+$ vi kii-iot/etc/apollo.xml
+(comment out tls connector)
+<!--connector id="tls" bind="tls://0.0.0.0:61614" connection_limit="2000"/ -->
+
 $ kii-iot/bin/apollo-broker run
 
     _____                .__  .__
